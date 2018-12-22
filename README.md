@@ -147,11 +147,12 @@ Create a new database user named catalog that has limited permissions to your ca
 
 
 ## Source
-Udacity https://Udacity.com
+my fsnd in Udacity https://Udacity.com
 Apache http://httpd.apache.org/docs/
-github https://github.com
-Stackoverflow https://stackoverflow.com
-Ubuntu documentation https://help.ubuntu.com
-digitalocean https://www.digitalocean.com
+stueken github repo https://github.com/stueken/FSND-P5_Linux-Server-Configuration
+Stackoverflow https://stackoverflow.com/questions/6142437/make-git-directory-web-inaccessible
+https://stackoverflow.com/questions/12201928/python-open-gives-ioerror-errno-2-no-such-file-or-directory
+Ubuntu documentation https://help.ubuntu.com/community/UbuntuTime#Using_the_Command_Line_.28terminal.29
+digitalocean https://www.digitalocean.com/community/tutorials/how-to-secure-postgresql-on-an-ubuntu-vps
 
 * **hadeel khaled** - *Initial work* - [hadeelkh](https://github.com/hadeelkh)
