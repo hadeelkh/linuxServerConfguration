@@ -7,7 +7,7 @@ A baseline installation of Ubuntu Linux on a virtual machine to host a Flask web
 
 
 ## SSH port
-22
+2200
 
 
 ## URL for my web app
@@ -22,7 +22,8 @@ http://35.244.40.206.xip.io
 sudo apt-get update
 sudo sudo apt-get upgrade
 '''
-3. Configure the Uncomplicated Firewall (UFW) to only allow incoming connections for SSH (port 2200), HTTP (port 80), and NTP (port 123).
+3. Configure the Uncomplicated Firewall (UFW) to only allow incoming connections for SSH (port 2200), HTTP (port 80), NTP (port 123) , and deny port to 22
+4. Using Firewall Rules to allow ssh with port 2200
 4. Create a new user account named grader.
 5. Give grader the permission to sudo.
 6. Configure the local timezone to UTC.
@@ -38,8 +39,8 @@ sudo sudo apt-get upgrade
 1. Open the config file:
 $ vim /etc/ssh/sshd_config
 
-2. try to Change to Port 2200. I'm working in google cluod and when I try to ssh with new port I get this message "We are unable to connect to the VM on port 2200"
-so I return the port to 22
+2. Change port to  2200
+ 
 3. Change PermitRootLogin from without-password to no and PasswordAuthentication to no
 4. Append UseDNS no.
 5. Append AllowUsers grader.
@@ -154,5 +155,6 @@ Stackoverflow https://stackoverflow.com/questions/6142437/make-git-directory-web
 https://stackoverflow.com/questions/12201928/python-open-gives-ioerror-errno-2-no-such-file-or-directory
 Ubuntu documentation https://help.ubuntu.com/community/UbuntuTime#Using_the_Command_Line_.28terminal.29
 digitalocean https://www.digitalocean.com/community/tutorials/how-to-secure-postgresql-on-an-ubuntu-vps
-
+google cloud doc https://cloud.google.com/vpc/docs/using-firewalls
+slack https://uconnectsaudi.slack.com/archives/CCHEAJ877/p1544814395219700
 * **hadeel khaled** - *Initial work* - [hadeelkh](https://github.com/hadeelkh)
